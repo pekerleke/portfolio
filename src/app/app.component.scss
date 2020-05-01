@@ -8,27 +8,13 @@
         grid-column-gap: 24px;
         grid-template-columns: 1fr;
         //grid-template-rows: repeat(1, 1fr);
-
-        .card{
-            background-color: #eee;
-            height: 200px;
-            width: 100%;
-            margin-bottom: 24px;
-            border-radius: 8px;
-            padding: 10px;
-            transition: 0.5s;
-
-            &:hover{
-                background-color: #ccc;
-            }
-        }
     }
 }
 
 .sticky-footer{
     position: sticky;
     bottom: 0;
-    background: linear-gradient(to left, rgb(92, 39, 176), #3F51B5);
+    background: linear-gradient(to left, var(--main-color), var(--secondary-color));
     color: #fff;
     width: 100%;
     padding: 0px 20px;

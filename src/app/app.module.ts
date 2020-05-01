@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 import { BannerComponent } from './components/banner/banner.component';
+import { CardComponent } from './components/card/card.component';
 
 registerLocaleData(es);
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent
+    BannerComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
