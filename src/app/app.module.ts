@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 import { BannerComponent } from './components/banner/banner.component';
-import { CardComponent } from './components/card/card.component';
+import { CardContainerComponent } from './components/card-container/card-container.component';
+import { AptitudeContainerComponent } from './components/aptitude-container/aptitude-container.component';
 
 registerLocaleData(es);
 
@@ -18,7 +19,8 @@ registerLocaleData(es);
   declarations: [
     AppComponent,
     BannerComponent,
-    CardComponent
+    CardContainerComponent,
+    AptitudeContainerComponent
   ],
   imports: [
     BrowserModule,

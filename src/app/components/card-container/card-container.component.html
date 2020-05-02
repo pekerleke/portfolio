@@ -1,0 +1,14 @@
+<h3 nz-typography class>Proyectos</h3>
+<section>
+    <div class="card" *ngFor="let proyect of data">
+        <div class="image-container">
+            <img src="{{proyect.backgroundImage}}" alt="image principal de {{proyect.title}}">
+        </div>
+        <div class="content-container">
+            <span>{{proyect.title}}</span>
+            <p>{{proyect.description}}</p>
+    
+            <small>{{proyect.date}}</small>
+        </div>
+    </div>
+</section>
