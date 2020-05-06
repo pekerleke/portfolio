@@ -18,7 +18,31 @@
     }
 }
 
+.description-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+
+    p{
+        display: inline-block;
+        vertical-align: top;
+        padding: 33px;
+    }
+
+    .profile-image{
+        box-shadow: 0px 6px 27px #04040473;
+        margin: auto;
+        width: 100%;
+        border-radius: 10000px;
+        max-width: 200px;
+    }
+}
+
 @media (min-width: 600px){
+    .description-container{
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 140px;
+    }
     .container{
         padding: 30px;
     }

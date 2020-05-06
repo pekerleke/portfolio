@@ -25,7 +25,7 @@
             display: block;
             font-size: 14px;
             font-weight: 100;
-            margin-top: -10px;
+            margin-top: 0;
             margin-left: 4px;        
         }
     }
@@ -35,5 +35,44 @@
     .banner-container{
         height: 400px;
         background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/2397650/pexels-photo-2397650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        
+        h1{
+            bottom: 60px;
+        }
+
+        .square-a{
+            width: 65.1%;
+            height: 70px;
+            background-color: #efefef;
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .square-b{
+            width: 19%;
+            height: 70px;
+            background-color: #efefef;
+            position: absolute;
+            bottom: 0;
+            left: 81%;
+        }
+    
+        .poligon{
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 65%;
+            -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+            clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+            width: 18%;
+            background-color: #efefef;
+        }
+        
+        .reverse{
+                left: 69%;
+                -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+                clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+        }
+    
     }
 }
