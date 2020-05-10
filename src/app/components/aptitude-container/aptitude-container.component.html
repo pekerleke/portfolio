@@ -14,14 +14,12 @@
 -->
 
 <div class="aptitudes">
-    <a href="{{aptitude.url}}" target="_blank" *ngFor="let aptitude of data">
-        <div class="aptitude">
-            <img class="aptitude-image" src="{{aptitude.image_url}}" alt="">
-            <span>{{aptitude.name}}</span>
+    <a href="{{aptitude.url}}" class="aptitude" target="_blank" *ngFor="let aptitude of data">
+        <img class="aptitude-image" src="{{aptitude.image_url}}" alt="">
+        <span>{{aptitude.name}}</span>
             
-            <div class="progress-bar">
-                <span [style.width]="aptitude.percentage+'%'" title="conocimientos"></span>
-            </div>
+        <div class="progress-bar">
+            <span [style.width]="aptitude.percentage+'%'" title="conocimientos"></span>
         </div>
     </a>
 </div>
