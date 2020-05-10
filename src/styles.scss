@@ -2,6 +2,8 @@
     --main-color: #5C27B0;
     --secondary-color: #3F51B5;
     --body-color: #efefef;
+    --background-color: #fff;
+    --text-color: #444;
 }
 
 body{
@@ -9,6 +11,7 @@ body{
     background-color: var(--body-color);
     font-family: 'Raleway', sans-serif;
     padding-bottom: 200px;
+    transition: 0.5s;
 }
 
 #loader{
@@ -17,8 +20,8 @@ body{
     font-size: 12px;
     padding: 2px;
     border-radius: 7px;
-    background: linear-gradient(to left, var(--main-color), var(--secondary-color));
-    color: #fff;
+    background: var(--background-color);
+    //color: linear-gradient(to left, var(--main-color), var(--secondary-color));
     position: absolute;
     top: 0;
     bottom: 0;
@@ -28,4 +31,14 @@ body{
     height: 23px;
     margin: auto;
     text-align: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }

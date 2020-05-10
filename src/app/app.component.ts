@@ -9,9 +9,28 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 export class AppComponent {
   title = 'portfolio';
   year = new Date().getFullYear();
+  style = 'light';
 
   // tslint:disable-next-line: use-lifecycle-interface
   ngOnInit() {
     document.getElementById('loader').style.display = 'none';
+  }
+
+  toggleStyle() {
+    if (this.style === 'light') {
+      document.documentElement.style.setProperty('--body-color', '#444');
+      document.documentElement.style.setProperty('--background-color', '#222');
+      document.documentElement.style.setProperty('--text-color', '#fff');
+      document.documentElement.style.setProperty('--main-color', '#2787b0');
+      document.documentElement.style.setProperty('--secondary-color', '#3db78f');
+      this.style = 'dark';
+    } else {
+      document.documentElement.style.setProperty('--body-color', '#efefef');
+      document.documentElement.style.setProperty('--background-color', '#fff');
+      document.documentElement.style.setProperty('--text-color', '#444');
+      document.documentElement.style.setProperty('--main-color', '#5C27B0');
+      document.documentElement.style.setProperty('--secondary-color', '#3F51B5');
+      this.style = 'light';
+    }
   }
 }
