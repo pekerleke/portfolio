@@ -1,11 +1,27 @@
 <h3 nz-typography class>Aptitudes</h3>
-<section>
-    <div class="item" *ngFor="let aptitude of data">
+<!--
+
+    <section>
+        <div class="item" *ngFor="let aptitude of data">
+            <a href="{{aptitude.url}}" target="_blank">
+                <div class="image-container">
+                    <img class="aptitude-image" src="{{aptitude.image_url}}" alt="">
+                </div>
+                <span>{{aptitude.name}}</span>
+            </a>
+        </div>
+    </section>
+-->
+
+<div class="aptitudes">
+    <div class="aptitude" *ngFor="let aptitude of data">
         <a href="{{aptitude.url}}" target="_blank">
-            <div class="image-container">
-                <img class="aptitude-image" src="{{aptitude.image_url}}" alt="">
-            </div>
+            <img class="aptitude-image" src="{{aptitude.image_url}}" alt="">
             <span>{{aptitude.name}}</span>
+
+            <div class="progress-bar">
+                <span [style.width]="aptitude.percentage+'%'" title="conocimientos"></span>
+            </div>
         </a>
     </div>
-</section>
+</div>
