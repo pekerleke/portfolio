@@ -1,0 +1,12 @@
+<div class="trends-title">
+    <h1>Mercadolibre Trends <small> hoy en Argentina</small></h1>
+    <a href="/">volver al inicio</a>
+</div>
+
+<div class="trends-container">
+    
+    <a class="trend" *ngFor="let item of this.data; let i = index" [href]="item.url">
+        <span class="item-position">#<em>{{i+1}}</em></span> 
+        <span class="item-name">{{item.keyword}}</span>
+    </a>
+</div>

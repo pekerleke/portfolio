@@ -1,6 +1,6 @@
 <h3 nz-typography class>Proyectos / Pruebas</h3>
 <section>
-    <div class="card" *ngFor="let proyect of data">
+    <a class="card" *ngFor="let proyect of data" [href]="proyect.href" title="{{proyect.title}}">
         <div class="image-container">
             <img src="{{proyect.backgroundImage}}" alt="image principal de {{proyect.title}}">
         </div>
@@ -10,5 +10,5 @@
     
             <small>{{proyect.date}}</small>
         </div>
-    </div>
+    </a>
 </section>

@@ -22,12 +22,7 @@ export class BcraGraphComponent implements OnInit {
   getData() {
     // Access-Control-Allow-Origin: *
     // tslint:disable-next-line: max-line-length
-    // return this.http.get('https://cors-anywhere.herokuapp.com/https://api.estadisticasbcra.com/usd_of', { headers: new HttpHeaders({'Access-Control-Allow-Origin': '*'}) });
-    return this.http.get('https://api.estadisticasbcra.com/usd_of',
-                          { headers: new HttpHeaders({'Access-Control-Allow-Origin': '*',
-                                                      'Access-Control-Allow-Methods': 'GET,PUT,OPTIONS',
-                                                      // tslint:disable-next-line: max-line-length
-                                                      Authorization: 'BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA2OTA1ODMsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJtcnRuc2FsZW1AZ21haWwuY29tIn0.MI8huaRsiFeW26V_ZqMbnnApIYMAX0L_wM-mlYpK5WoPxk8tgljF7fdxn1BiPw9Ss0vwfehdC-nErSmK-qeeJA',
-                                                      }) });
+    //return this.http.get('https://api.twitter.com/1.1/search/tweets.json', { headers: new HttpHeaders({'Access-Control-Allow-Origin': '*'}) });
+     return this.http.get('https://api.mercadolibre.com/trends/MLA');
   }
 }

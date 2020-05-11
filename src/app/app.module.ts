@@ -13,6 +13,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { AptitudeContainerComponent } from './components/aptitude-container/aptitude-container.component';
 import { BcraGraphComponent } from './labs/bcra-graph/bcra-graph.component';
+import { MlTrendsComponent } from './labs/ml-trends/ml-trends.component';
+import { HomeComponent } from './components/home/home.component';
 
 registerLocaleData(es);
 
@@ -22,7 +24,9 @@ registerLocaleData(es);
     BannerComponent,
     CardContainerComponent,
     AptitudeContainerComponent,
-    BcraGraphComponent
+    BcraGraphComponent,
+    MlTrendsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

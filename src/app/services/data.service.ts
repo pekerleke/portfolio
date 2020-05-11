@@ -11,25 +11,29 @@ export class DataService {
         title: 'BuscoPensiones',
         description: 'Nace para unificar la informacion sobre hospedajes estudientiles bajo un mismo techo',
         backgroundImage: '/assets/images/buscopensiones.png',
-        date: '2016 - actualidad'
+        date: '2016 - actualidad',
+        href: 'http://buscopensiones.com/'
       },
       {
         title: 'El Sinso Contador',
         description: '',
-        backgroundImage: '/assets/images/working.jpeg',
-        date: '2019'
+        backgroundImage: 'https://i.scdn.co/image/7fa522b9ce38b3f21a7bd2befffc7d8fe598da37',
+        date: '2019',
+        href: '#'
       },
       {
-        title: 'Proyecto 3',
-        description: '',
-        backgroundImage: '/assets/images/working.jpeg',
-        date: '2017 - 2018'
+        title: 'MercadoLibre Trends',
+        description: 'pruebas contra la api de mercadolibre',
+        backgroundImage: 'https://i.blogs.es/ba4666/emele/1366_2000.jpg',
+        date: '2020',
+        href: '/mlTrends'
       },
       {
         title: 'Proyecto 4',
         description: '',
         backgroundImage: '/assets/images/working.jpeg',
-        date: '2017'
+        date: '2017',
+        href: '#'
       }
     ],
 
