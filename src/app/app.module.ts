@@ -12,6 +12,7 @@ import es from '@angular/common/locales/es';
 import { BannerComponent } from './components/banner/banner.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { AptitudeContainerComponent } from './components/aptitude-container/aptitude-container.component';
+import { BcraGraphComponent } from './labs/bcra-graph/bcra-graph.component';
 
 registerLocaleData(es);
 
@@ -20,7 +21,8 @@ registerLocaleData(es);
     AppComponent,
     BannerComponent,
     CardContainerComponent,
-    AptitudeContainerComponent
+    AptitudeContainerComponent,
+    BcraGraphComponent
   ],
   imports: [
     BrowserModule,
