@@ -6,6 +6,9 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: 'mlTrends', component: MlTrendsComponent},
+  { path: 'mlTrends/', component: MlTrendsComponent},
+  { path: 'mlTrends/', component: MlTrendsComponent},
+  { path: 'test', component: HomeComponent},
   { path: '**', component: HomeComponent}
 ];
 
